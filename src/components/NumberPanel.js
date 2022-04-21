@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from './Button'
+import { Button, CustomButton } from './Button'
 
 export const NumberPanel = ({setValue, ...otherProps}) => {
   const buttonClick = (value) => {
@@ -10,16 +10,16 @@ export const NumberPanel = ({setValue, ...otherProps}) => {
     <>
       <div className='row'>
         <div>
-          <Button text="1" handleClick={()=>{buttonClick("1")}}></Button>
+          <CustomButton text="1" handleClick={()=>{buttonClick("1")}}></CustomButton>
         </div>
         <div>
-          <Button text="2" handleClick={()=>{buttonClick("2")}}></Button>
+          <CustomButton text="2" handleClick={()=>{buttonClick("2")}}></CustomButton>
         </div>
         <div>
-          <Button text="3"  handleClick={()=>{buttonClick("3")}}></Button>
+          <CustomButton text="3"  handleClick={()=>{buttonClick("3")}}></CustomButton>
         </div>
         <div>
-          <Button text="4" handleClick={()=>{buttonClick("4")}}></Button>
+          <CustomButton text="4" handleClick={()=>{buttonClick("4")}}></CustomButton>
         </div>
       </div>
       <div  className='row'>

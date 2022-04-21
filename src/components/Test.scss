@@ -1,0 +1,38 @@
+.drop {
+  margin: 4px auto;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #717f8b;
+  opacity: 0.8;
+  border: 1px solid #38506e;
+  border-radius: 60% 40% 50% 60% / 70% 50% 60% 40%;
+
+  &::before {
+    content: "";
+    /*  So essentially when styling content that doesnt 
+    exist one needs to use (content: '') */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #7faadf;
+    border-radius: 60% 40% 50% 60% / 70% 50% 60% 40%;
+    box-shadow: -20px 30px 16px #54627a, -40px 60px 32px #54627a, inset -6px 6px 10px #54627a,
+      inset 2px 6px 10px #3d6495, inset 20px -20px 22px white, inset 40px -40px 44px #a8ceff;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 70px;
+    top: 20px;
+    height: 20px;
+    width: 20px;
+    background: #dddee0;
+    border-radius:60% 40% 50% 60% / 70% 50% 60% 40%;
+  
+    /* Basically create a small square and position it right then shape it using the border radius property. Manipulate the box shadow to get the second light reflection */
+    box-shadow: 8px 20px 0 -6px #d8ddec;
+    opacity: 0.8;
+  }
+}

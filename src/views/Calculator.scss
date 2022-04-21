@@ -1,0 +1,25 @@
+.calculator {
+  width: 500px;
+  align-self: center;
+  margin: 10px;
+
+  .equation-area {
+    height: 50px;
+  }
+
+  .button {
+    width: fit-content;
+    border: 1px solid lightgray;
+    margin: 5px;
+    padding: 5px;
+    min-width: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 1px gray;
+    cursor: pointer;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+}

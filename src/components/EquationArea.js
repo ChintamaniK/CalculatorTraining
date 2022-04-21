@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export const EquationArea = () => {
-  return (
-    <div>EquationArea</div>
-  )
-}
+export const EquationArea = (props) => {
+  return <div className={`equation-area`}>
+    <span>{props.text}</span>
+    <br/>
+    <span>{props.result}</span>
+  </div>;
+};
